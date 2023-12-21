@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<title> Fashion Week Portraits </title>
+
+</head>
+
+	<body>
+
+	  <header>
+	    <h1>
+	      <a href="index.html">Chloé Chevalier</a>
+	    </h1>
+	    <nav>
+	      <ul id="menu">
+	       
+			       <li id="proj1">
+			        	<a href="index.html#deuxieme">Projets</a>
+			        </li>
+
+			        <li id="div2">
+			        	<a href="divers.html">Divers
+			    	</li>
+
+			        <li id="co3"> 
+			        	<a href="index.html#contact">Contact</a>
+			        </li>
+	      </ul>
+	    </nav>
+	  </header>
+
+	  <section id="infos">
+	    <h4>Fashion Week</h4>
+	    <h5>Projet personnel de portraits</h5> <br> <br>
+		    <p>
+		      Avec une passion prononcée pour la mode et la photographie, j’ai décidé de les associer en assistant à la Fashion Week de Paris. <br> Mon objectif était de capturer des photographies de personnalités arborant des tenues haute couture lors de différents défilés tels que Givenchy, Balmain, Valentino, etc. <br> <br>
+		      Le fait d’avoir commencé à prendre ces clichés m’a permis d’approfondir ma compréhension de l’influence et de la mode, d’explorer les tendances, de mieux connaître les maisons de couture, ainsi que les différentes collaborations. <br> <br>
+		      J’ai également créé un compte Instagram spécialement dédié à ce travail photographique :
+		      <a href="https://www.instagram.com/chlll_fashion/" target="_blank"> @chlll_fashion </a>
+		      <br><br><br><br><br><br><br><br>
+		      <br><br><br><br><br><br><br><br><br>
+
+		      Barbara Palvin Sprouse <br>
+		      Yang Jeong-in (Stray Kids) <br>
+		      Lee Tae-yong (NCT 127) <br>
+		      Cha Eun-Woo (Astro) <br>
+		      Winnie Harlow <br>
+		      Amber Valletta <br>
+		      Ohira Shuzo <br>
+
+
+		    </p>
+	  </section>
+
+	  <section id="conteneur_proj">
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp1.jpg" alt="portrait1" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp2.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp13.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	     <article class="portrait">
+	      <figure>
+	        <img src="import/fwp6.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp8.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp7.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp5.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp4.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp9.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp10.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp3.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/fwp12.jpg" alt="Fashion Week" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	     <article class="paysage">
+	      <figure>
+	        <img src="import/fwp11.jpg" alt="Fashion Week"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+
+
+	  </section>
+
+
+	 <div class="fullscreen-image hidden" id="fullscreenImage" onclick="closeFullscreen()">
+		  <span class="close-fullscreen" onclick="closeFullscreen()">&times;
+		  </span>
+
+		  	<img id="fullscreenImg">
+
+	</div>
+
+
+<!-- ___________________JavaScript_____________________ -->
+
+	  <script>
+	    function openFullscreen(img) {
+	      document.getElementById('fullscreenImg').src = img.src;
+	      document.getElementById('fullscreenImage').classList.add('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'flex';
+	    }
+
+	    function closeFullscreen() {
+	      document.getElementById('fullscreenImage').classList.remove('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'none';
+	    }
+	  </script>
+
+
+
+	</body>
+</html>

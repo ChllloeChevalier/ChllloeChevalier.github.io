@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<title> Shooting Objet</title>
+
+</head>
+	<body>
+
+		<header>
+	    <h1>
+	      <a href="index.html">Chloé Chevalier</a>
+	    </h1>
+	    <nav>
+	      <ul id="menu">
+	        
+			       <li id="proj1">
+			        	<a href="index.html#deuxieme">Projets</a>
+			        </li>
+
+			        <li id="div2">
+			        	<a href="divers.html">Divers
+			    	</li>
+
+			        <li id="co3"> 
+			        	<a href="index.html#contact">Contact</a>
+			        </li>
+	      </ul>
+	    </nav>
+	  </header>
+
+	  <section id="infos">
+	    <h4>Shooting d'objet</h4>
+	    <h5>Mise en lumière d'un sac à main</h5> <br><br>
+		    <p>
+		      Pour lancer ce projet, il me fallait choisir un objet qui me plaisait. Ensuite, j’ai réalisé des prises de vue selon trois registres différents : <br>
+			  * Publicitaire <br>
+			  * Packshot <br>
+		 	  * Libre <br><br>
+			  Pour cette dernière catégorie, je me suis inspirée de la collection Pre-Fall 2022 du créateur et styliste Zuhair Murad. <br><br>
+			  En ce qui concerne le matériel utilisé, j'ai utilisé un Canon 7D avec un objectif 18-55 mm.
+
+		    </p>
+	  </section>
+
+	  <section id="conteneur_proj">
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/objet1.jpg" alt="Sac à main" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/objet5.jpg" alt="Sac à main" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	     <article class="paysage">
+	      <figure>
+	        <img src="import/objet2.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet6.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet4.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet3.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet7.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet8.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet9.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	       <article class="paysage">
+	      <figure>
+	        <img src="import/objet10.jpg" alt="Sac à main"  onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+
+
+	  </section>
+
+
+	 <div class="fullscreen-image hidden" id="fullscreenImage" onclick="closeFullscreen()">
+		  <span class="close-fullscreen" onclick="closeFullscreen()">&times;
+		  </span>
+
+		  	<img id="fullscreenImg">
+
+	</div>
+
+
+<!-- ___________________JavaScript_____________________ -->
+
+	  <script>
+	    function openFullscreen(img) {
+	      document.getElementById('fullscreenImg').src = img.src;
+	      document.getElementById('fullscreenImage').classList.add('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'flex';
+	    }
+
+	    function closeFullscreen() {
+	      document.getElementById('fullscreenImage').classList.remove('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'none';
+	    }
+	  </script>
+
+	</body>
+</html>

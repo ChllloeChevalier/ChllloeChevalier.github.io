@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<title> Portrait </title>
+
+</head>
+
+	<body>
+
+	  <header>
+	    <h1>
+	      <a href="index.html">Chloé Chevalier</a>
+	    </h1>
+	    <nav>
+	      <ul id="menu">
+	        
+			       <li id="proj1">
+			        	<a href="index.html#deuxieme">Projets</a>
+			        </li>
+
+			        <li id="div2">
+			        	<a href="divers.html">Divers
+			    	</li>
+
+			        <li id="co3"> 
+			        	<a href="index.html#contact">Contact</a>
+			        </li>
+	      </ul>
+	    </nav>
+	  </header>
+
+	  <section id="infos">
+	    <h4>Shooting de portraits</h4>
+	    <h5>Initiation aux portraits</h5> <br> <br>
+		    <p>
+		     Ce projet visait à m'initier à l'utilisation du flash et à perfectionner le cadrage de portraits. J'avais la liberté de sélectionner le style de fond qui correspondait à mes préférences, tout en maîtrisant l'éclairage pour obtenir des résultats satisfaisants à l'aide d'un Canon 7d avec un objectif de 18-55mm.
+		    </p>
+	  </section>
+
+	  <section id="conteneur_proj">
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/portrait1.jpg" alt="Portrait" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/portrait2.jpg" alt="Portrait" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/portrait6.jpg" alt="Portrait" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	     <article class="portrait">
+	      <figure>
+	        <img src="import/portrait7.jpg" alt="Portrait" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	  </section>
+
+
+	 <div class="fullscreen-image hidden" id="fullscreenImage" onclick="closeFullscreen()">
+		  <span class="close-fullscreen" onclick="closeFullscreen()">&times;
+		  </span>
+
+		  	<img id="fullscreenImg">
+
+	</div>
+
+
+<!-- ___________________JavaScript_____________________ -->
+
+	  <script>
+	    function openFullscreen(img) {
+	      document.getElementById('fullscreenImg').src = img.src;
+	      document.getElementById('fullscreenImage').classList.add('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'flex';
+	    }
+
+	    function closeFullscreen() {
+	      document.getElementById('fullscreenImage').classList.remove('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'none';
+	    }
+	  </script>
+
+
+
+	</body>
+</html>

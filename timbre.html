@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+
+	<title> Timbre en risographie </title>
+
+</head>
+	<body>
+
+		<header>
+	    <h1>
+	      <a href="index.html">Chloé Chevalier</a>
+	    </h1>
+	    <nav>
+	      <ul id="menu">
+	      	
+	        <li id="proj1">
+			 	<a href="index.html#deuxieme">Projets</a>
+			</li>
+
+			<li id="div2">
+			  	<a href="divers.html">Divers
+			</li>
+
+			<li id="co3"> 
+			    <a href="index.html#contact">Contact</a>
+			</li>
+
+	      </ul>
+	    </nav>
+	  </header>
+
+	  <section id="infos">
+	    <h4>Timbre</h4>
+	    <h5> Réalisation d'un timbre augmenté en risographie </h5> <br> <br>
+		    <p>
+		    	J'ai été chargé de concevoir un timbre combinant l'aspect papier et numérique. Pour l'année 2030, "La Poste" m'a demandé d'imaginer le graphisme d'un timbre papier qui serait enrichi numériquement par une version animée. J'ai dû synthétiser une image illustrant une ou plusieurs actualités à venir. <br><br>
+		    	Pour ce timbre, je me suis inspiré de l'urbanisation constante des espaces ruraux. Étant captivé par la culture asiatique, j'ai basé mon design sur les villages traditionnels qui, par exemple, sont devenus des villes comme Hong Kong ou Tokyo.<br><br>
+		    	Par la suite, après avoir animé, extrait les PNG de l'animation et les avoir positionnés sur un modèle, j'ai imprimé en risographie puis remonté la vidéo.
+
+		    </p>
+	  </section>
+
+	  <section id="conteneur_proj">
+
+	  	 <article class="portrait">
+	      <figure>
+	        <iframe src="https://player.vimeo.com/video/896296745?h=a34cbb95f9&title=0&byline=0&portrait=0" width="500" height="729" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+	        </iframe>
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre2.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre1.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre3.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre4.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre5.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre6.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre7.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+	      
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre8.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre9.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre10.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+	    <article class="portrait">
+	      <figure>
+	        <img src="import/timbre11.jpg" alt="Timbre" onclick="openFullscreen(this)">
+	      </figure>
+	    </article>
+
+
+	   
+
+
+	  </section>
+
+
+	 <div class="fullscreen-image hidden" id="fullscreenImage" onclick="closeFullscreen()">
+		  <span class="close-fullscreen" onclick="closeFullscreen()">&times;
+		  </span>
+
+		  	<img id="fullscreenImg">
+
+	</div>
+
+
+<!-- ___________________JavaScript_____________________ -->
+
+	  <script>
+	    function openFullscreen(img) {
+	      document.getElementById('fullscreenImg').src = img.src;
+	      document.getElementById('fullscreenImage').classList.add('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'flex';
+	    }
+
+	    function closeFullscreen() {
+	      document.getElementById('fullscreenImage').classList.remove('fullscreen');
+	      document.getElementById('fullscreenImage').style.display = 'none';
+	    }
+	  </script>
+
+	</body>
+</html>
