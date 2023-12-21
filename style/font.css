@@ -1,14 +1,18 @@
 @font-face{
 font-family: "outfit";
 src: url("webfonts/Outfit-Regular.ttf") format("ttf")
+font-weight: 400;
 }
 
 @font-face{
 font-family: "outfit-light";
 src: url("webfonts/Outfit-Light.ttf") format("ttf")
+font-weight: 300;
 }
 
 @font-face{
 font-family: "outfit-bold";
 src: url("webfonts/Outfit-Medium.ttf") format("ttf")
+font-weight: 500;
 }
+
