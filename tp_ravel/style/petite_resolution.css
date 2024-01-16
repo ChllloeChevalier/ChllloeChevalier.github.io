@@ -3,6 +3,10 @@ img{
 	width:100vw;
 }
 
+h1{
+	font-size: 1em;
+}
+
 figcaption {
 	opacity: 1;
 	font-size: 0.7em;
